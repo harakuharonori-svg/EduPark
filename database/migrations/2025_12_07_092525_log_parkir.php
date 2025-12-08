@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('id_tempat')->constrained('tempat')->onDelete('cascade');
             $table->timestamp('waktu_masuk');
             $table->timestamp('waktu_keluar')->nullable();
-            $table->enum('status', ['gerbang_depan, gerbang_belakang'])->deafult('gerbang_belakang');
+            $table->enum('status', ['didalam', 'diluar'])->deafult('didalam');
             $table->timestamps();
         });
     }

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('tempat', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->integer('capasitas')->default(0);
+            $table->integer('kapasitas')->default(0);
             $table->timestamps();
         });
     }

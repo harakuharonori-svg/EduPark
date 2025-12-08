@@ -9,15 +9,12 @@ class Kendaraan extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'tipe',
-        'nomor_plat',
-        'brand',
-        'warna'
-    ];
+    protected $table = 'kendaraan';
 
-    public function logParkir()
+    protected $fillable = ['id_warsek','tipe','brand','nomor_plat','warna'];
+
+    public function wargaSekolah()
     {
-        return $this->hasMany(LogParkir::class);
+        return $this->belongsTo(\App\Models\WargaSekolah::class, 'id_warsek');
     }
 }
