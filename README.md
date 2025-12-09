@@ -18,15 +18,24 @@ git clone https://github.com/harakuharonori-svg/EduPark
 
 cd EduPark
 
-3. Installing
+2. Installing
 
 composer install
 
-5. Migrasi Database
+3. Konfigurasi env
+
+cp .env.example .env
+
+lalu atur konfigurasi database di file .env:
+DB_DATABASE=edupark (atau nama database lain)
+DB_USERNAME=root
+DB_PASSWORD=
+
+4. Migrasi Database
 
 php artisan migrate
 
-7. Menjalankan Seeder
+5. Menjalankan Seeder
 
 php artisan db:seed
 
