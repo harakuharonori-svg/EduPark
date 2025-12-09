@@ -15,6 +15,7 @@ Instalasi dan Setup
 1. Clone Repository
 
 git clone https://github.com/harakuharonori-svg/EduPark
+
 cd EduPark
 
 3. Installing
