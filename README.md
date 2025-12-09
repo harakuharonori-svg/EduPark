@@ -31,11 +31,15 @@ DB_DATABASE=edupark (atau nama database lain)
 DB_USERNAME=root
 DB_PASSWORD=
 
-4. Migrasi Database
+4. Generate Key
+
+php artisan key:generate
+
+5. Migrasi Database
 
 php artisan migrate
 
-5. Menjalankan Seeder
+6. Menjalankan Seeder
 
 php artisan db:seed
 
