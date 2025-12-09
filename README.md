@@ -27,8 +27,11 @@ composer install
 cp .env.example .env
 
 lalu atur konfigurasi database di file .env:
+
 DB_DATABASE=edupark (atau nama database lain)
+
 DB_USERNAME=root
+
 DB_PASSWORD=
 
 4. Generate Key
