@@ -34,17 +34,17 @@ DB_USERNAME=root
 
 DB_PASSWORD=
 
-4. Generate Key
-
-php artisan key:generate
-
-5. Migrasi Database
+4. Migrasi Database
 
 php artisan migrate
 
-6. Menjalankan Seeder
+5. Menjalankan Seeder
 
 php artisan db:seed
+
+6. Generate Key
+
+php artisan key:generate
 
 ---
 
