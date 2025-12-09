@@ -3,7 +3,7 @@
 use App\Http\Controllers\KendaraanController;
 use App\Http\Controllers\LogParkirController;
 
-Route::get('/', function(){ return view('welcome'); });
+Route::resource('/', KendaraanController::class)->except(['show']);
 
 Route::resource('kendaraan', KendaraanController::class)->except(['show']);
 Route::get('/kendaraan-tes', [KendaraanController::class, 'tes']);
