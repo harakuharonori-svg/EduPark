@@ -13,17 +13,21 @@ Fitur Utama:
 Instalasi dan Setup
 
 1. Clone Repository
+
 '''bash
 git clone https://github.com/harakuharonori-svg/EduPark
 cd EduPark
 
-2. Installing
+3. Installing
+
 composer install
 
-3. Migrasi Database
+5. Migrasi Database
+
 php artisan migrate
 
-4. Menjalankan Seeder
+7. Menjalankan Seeder
+
 php artisan db:seed
 
 ---
